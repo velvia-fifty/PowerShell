@@ -23,8 +23,8 @@ Required:
 Recommended:
 
 - [Homebrew](https://brew.sh/) or [MacPorts](https://www.macports.org/)
-    - _These package managers are used to automate installing the toolchain, you may install packages manually_
-    - _If you have MacPorts installed installing PowerShell manually is recommended, the included install script for PowerShell will install Homebrew if not found. This may cause a conflict._
+  - _These package managers are used to automate installing the toolchain, you may install packages manually_
+  - _If you have MacPorts installed installing PowerShell manually is recommended, the included install script for PowerShell will install Homebrew if not found. This may cause a conflict._
 
 ### Git setup
 
@@ -40,16 +40,16 @@ Of course, this requires a self-hosted copy of PowerShell on macOS.
 
 #### Installing PowerShell
 
-The `./tools/installpsh-osx.sh` script will install PowerShell using Homebrew or cURL if MacPorts is installed.
+The `./tools/install-powershell.sh` script will install PowerShell using Homebrew or a cURL into `installer` if MacPorts is installed.
 If neither Homebrew or MacPorts is installed the script will install Homebrew.
 
 ```sh
-./tools/installpsh-osx.sh
+./tools/install-powershell.sh
 
 pwsh
 ```
 
-_To also install [VS Code](https://github.com/microsoft/vscode): `./tools/installpsh-osx.sh installide`_
+The argument `installide` will install [VS Code](https://github.com/microsoft/vscode) if Homebrew is installed.
 
 For manual binary installaton assistance, reer to these [instructions](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-on-macos?#binary-archives).
 
